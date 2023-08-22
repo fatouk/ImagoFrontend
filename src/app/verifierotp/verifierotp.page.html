@@ -1,0 +1,64 @@
+<ion-header>
+    <ion-toolbar class="toolbar-container">
+        <ion-title style="color: white;size: 12px;">
+            {{ currentDateTime | date: 'HH:mm' }}
+        </ion-title>
+        <ion-buttons>
+            <ion-back-button defaultHref="back" icon="arrow-back-sharp"></ion-back-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-button>
+                <ion-icon style="color: white;" slot="icon-only" name="wifi"></ion-icon>
+            </ion-button>
+            <ion-button>
+                <ion-icon slot="icon-only" name="battery-full"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content id="background-content">
+    <!-- 1ere page en haut avec Noir -->
+    <div class="half-page2 black-background ion-text-center">
+        <img src="assets/LogoText3.png" />
+    </div>
+    <!-- fin de la 1ere page en haut avec Noir -->
+
+    <!-- 3eme page au centre -->
+    <div class="center-page">
+        <div class="espacehaut"></div>
+        <div class="espacehaut"></div>
+        <div class="espacehaut"></div>
+        <div class="formulaire">
+            <ion-label class="textverification">
+                Code de verification envoyé au xxxxxxxx
+            </ion-label>
+            <ion-item style="margin-top: 5%;" lines="none">
+                <ion-item class="custom-input2" lines="none">
+                    <ion-input style="margin-bottom: 40%;" placeholder="X" class="textinput numberinput" type="number" [(ngModel)]="numero1"></ion-input>
+                </ion-item>
+                <ion-item class="custom-input2" lines="none">
+                    <ion-input style="margin-bottom: 40%;" placeholder="X" class="textinput numberinput" type="number" [(ngModel)]="numero2"></ion-input>
+                </ion-item>
+                <ion-item class="custom-input2" lines="none">
+                    <ion-input style="margin-bottom: 40%;" placeholder="X" class="textinput numberinput" type="number" [(ngModel)]="numero3"></ion-input>
+                </ion-item>
+                <ion-item class="custom-input2" lines="none">
+                    <ion-input style="margin-bottom: 40%;" placeholder="X" class="textinput numberinput" type="number" [(ngModel)]="numero4"></ion-input>
+                </ion-item>
+                <ion-item class="custom-input2" lines="none">
+                    <ion-input style="margin-bottom: 40%;" placeholder="X" class="textinput numberinput" type="number" [(ngModel)]="numero5"></ion-input>
+                </ion-item>
+            </ion-item>
+            <ion-button class="verifierbutton">
+                Verifier Otp
+            </ion-button>
+            <ion-label class="textbas2">Code non reçu? <strong>Cliquer ici</strong>
+            </ion-label>
+        </div>
+    </div>
+    <!--Fin 3eme page au centre -->
+
+    <!-- 2eme page au bas avec blanc -->
+    <div class="half-page1 white-background"></div>
+    <!-- Fin 2eme page au bas avec blanc -->
+</ion-content>

@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-toolbar class="toolbar-container">
+        <ion-title style="color: white;size: 12px;">
+            {{ currentDateTime | date: 'HH:mm' }}
+        </ion-title>
+        <ion-buttons slot="end">
+            <ion-button>
+                <ion-icon style="color: white;" slot="icon-only" name="wifi"></ion-icon>
+            </ion-button>
+            <ion-button>
+                <ion-icon slot="icon-only" name="battery-full"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content id="background-content">
+    <!-- 1ere page en haut avec Noir -->
+    <div class="half-page2 black-background ion-text-center">
+        <img src="assets/LogoText2.png" />
+    </div>
+    <!-- fin de la 1ere page en haut avec Noir -->
+    <div class="espacehaut"></div>
+    <div class="option">
+        <ion-button class="button button-clear" (click)="trueButtonOuvrier()" [ngClass]="{'selected-button': buttonId === 'button1'}">
+            <span>Main d'oeuvre</span></ion-button>
+        <ion-button class="button button-clear" (click)="trueButtonClient()" [ngClass]="{'selected-button': buttonId === 'button2'}"><span>Client</span></ion-button>
+    </div>
+    <!-- 3eme page au centre -->
+    <!-- <div class="center-page">
+      
+     
+      <div class="formulaire" *ngIf="button1">
+          <app-email></app-email>
+      </div>
+      <div class="formulaire" *ngIf="button2">
+          <app-numero></app-numero>
+      </div>
+      <div class="formulaire" *ngIf="verifier">
+          <app-verifierotp></app-verifierotp>
+      </div>
+  </div> -->
+    <!--Fin 3eme page au centre -->
+
+    <!-- 2eme page au bas avec blanc -->
+    <!-- <div class="half-page1 white-background"></div> -->
+    <!-- Fin 2eme page au bas avec blanc -->
+
+</ion-content>

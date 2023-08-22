@@ -1,0 +1,186 @@
+.textinput {
+    font-family: Varela !important;
+    font-size: 0.8em;
+}
+
+.textbas {
+    font-family: Varela !important;
+    font-size: 0.7em;
+    text-align: right;
+    color: blue;
+    display: block;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.textbas2 {
+    font-family: Varela !important;
+    font-size: 0.7em;
+    text-align: center;
+    color: black;
+    display: block;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.textverification {
+    margin-left: 6%;
+    font-family: Varela !important;
+    font-size: 0.85em;
+}
+
+.verifierbutton {
+    --background: #E21B5A;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+    border-radius: 5px;
+    color: white;
+    text-transform: capitalize lowercase;
+    --background-hover: #FF6D00;
+}
+
+ion-button:hover {
+    --background: none;
+}
+
+.custom-input {
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 2%;
+    height: 40px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-input2 {
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    width: 20%;
+    height: 40px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1%;
+}
+
+#background-content {
+    left: 0px;
+    right: 0px;
+    top: calc(var(--offset-top) * -1);
+    bottom: calc(var(--offset-bottom) * -1);
+    position: absolute;
+    --background: #eeeeee;
+}
+
+ion-header {
+    --background: black !important;
+}
+
+ion-toolbar {
+    --background: black;
+}
+
+.toolbar-container {
+    padding-inline-start: var(--padding-start);
+    padding-inline-end: var(--padding-end);
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: var(--min-height);
+    contain: content;
+    overflow: hidden;
+    z-index: 10;
+    box-sizing: border-box;
+    background: black !important;
+}
+
+.contenu {
+    --background: black;
+}
+
+.black-background {
+    background-color: black;
+    img {
+        margin-top: 20%;
+    }
+}
+
+.white-background {
+    background-color: #EEEEEE;
+}
+
+.half-page1 {
+    height: 10%;
+    width: 100%;
+}
+
+.half-page2 {
+    height: 70%;
+    width: 100%;
+}
+
+.center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.center-page {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    margin-top: -90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 28px;
+    box-shadow: -2px 15px 40px #ebe1e11f;
+    position: fixed;
+    width: 90%;
+}
+
+.half-on-both {
+    width: calc(50% + 16px);
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.espacehaut {
+    height: 5%;
+}
+
+ion-button {
+    --border-radius: 15px;
+    font-size: small;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-transform: capitalize lowercase;
+    width: 50%;
+    color: white;
+}
+
+ion-button span {
+    text-transform: capitalize;
+}
+
+ion-button:active,
+ion-button:focus {
+    --background: #FF6D00;
+}
+
+.selected-button {
+    color: white;
+    // font-weight: bold;
+    --background: #FF6D00;
+}

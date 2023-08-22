@@ -1,0 +1,22 @@
+<ion-label class="textconnexion">Connectez-vous avec votre Email
+</ion-label>
+
+<ion-item>
+    <ion-input style="height: 15%;" [clearInput]="true" class="textinput" placeholder="Entrez votre Email" type="email" [(ngModel)]="email"></ion-input>
+</ion-item>
+<ion-item>
+    <ion-input [clearInput]="true" class="textinput" placeholder="Entrez votre mot de passe" type="password" [(ngModel)]="password"></ion-input>
+</ion-item>
+<ion-label class="textbas">Mot de passe oublié?
+</ion-label>
+<ion-button class="connexionbutton">
+    Connexion
+</ion-button>
+<ion-label class="textbas2">Vous n'avez pas de compte? <strong>Créer ici</strong>
+</ion-label>
+<ion-button class="buttongoogle">
+    <ion-icon slot="icon-only" name="logo-google"></ion-icon>
+</ion-button>
+<ion-button class="buttonfacebook">
+    <ion-icon slot="icon-only" name="logo-facebook"></ion-icon>
+</ion-button>

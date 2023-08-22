@@ -1,0 +1,23 @@
+<ion-label class="textconnexion">Connectez-vous avec votre Numéro
+</ion-label>
+
+<ion-item style="margin-top: 5%;" lines="none">
+    <ion-item class="custom-input2" lines="none">
+        <ion-input style="margin-bottom: 40%;" placeholder="+223" disabled="true" class="textinput"></ion-input>
+    </ion-item>
+    <ion-item class="custom-input" lines="none">
+        <ion-input [clearInput]="true" class="numberinput" class="textinput" placeholder="Numéro" type="number" [(ngModel)]="numero"></ion-input>
+    </ion-item>
+</ion-item>
+
+<ion-button class="connexionbutton" (click)="onClickButton()">
+    Envoyer Otp
+</ion-button>
+<ion-label class="textbas2">Vous n'avez pas de compte? <strong>Créer ici</strong>
+</ion-label>
+<ion-button class="buttongoogle">
+    <ion-icon slot="icon-only" name="logo-google"></ion-icon>
+</ion-button>
+<ion-button class="buttonfacebook">
+    <ion-icon slot="icon-only" name="logo-facebook"></ion-icon>
+</ion-button>

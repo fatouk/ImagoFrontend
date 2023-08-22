@@ -1,0 +1,91 @@
+.input-email {
+    border: solid 1px;
+    border-radius: 8%;
+    width: 90%;
+    display: flex;
+    margin-left: 5%;
+}
+
+.textinput {
+    font-family: Varela !important;
+    font-size: 0.8em;
+}
+
+.textbas {
+    font-family: Varela !important;
+    font-size: 0.7em;
+    text-align: right;
+    color: blue;
+    display: block;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.textbas2 {
+    font-family: Varela !important;
+    font-size: 0.7em;
+    text-align: center;
+    color: black;
+    display: block;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.textconnexion {
+    margin-left: 6%;
+    font-family: Varela !important;
+    font-size: 1em;
+}
+
+.connexionbutton {
+    --background: Black;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+    border-radius: 5px;
+    color: white;
+    text-transform: capitalize lowercase;
+    --background-hover: #FF6D00;
+}
+
+.buttongoogle {
+    --background: white;
+    color: red;
+    border: none;
+    margin-left: 25%;
+    --box-shadow: none;
+}
+
+.buttonfacebook {
+    border: none;
+    --background: white;
+    color: blue;
+    --box-shadow: none;
+}
+
+ion-button:hover {
+    --background: none;
+}
+
+.custom-input {
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 2%;
+    height: 40px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-input2 {
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    width: 30%;
+    height: 40px;
+    text-align: left;
+    display: flow-root;
+    align-items: center;
+    justify-content: center;
+}
